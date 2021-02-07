@@ -23,10 +23,12 @@ export default class Codeblock {
 
     applyTheme(name: string) {
         this.css = fetch(`https://raw.githubusercontent.com/PrismJS/prism/master/themes/prism-${name}.css`)
+        return this
     }
 
     applyOriginalTheme(url: string) {
         this.css = fetch(url)
+        return this
     }
 
 }
