@@ -11,8 +11,8 @@ export default class Codeblock {
         this.language = language
     }
 
-    code(code: string) {
-        this.content = code
+    code(content: string) {
+        this.content = content
         return this
     }
 
