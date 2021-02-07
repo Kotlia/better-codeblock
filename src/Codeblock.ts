@@ -1,5 +1,8 @@
 // @ts-ignore
-import fetch from 'sync-fetch'
+import syncFetch from 'sync-fetch'
+import fetch from 'node-fetch'
+import fs from "fs";
+import SvgGenerator from "./SvgGenerator";
 
 export default class Codeblock {
 
@@ -17,18 +20,26 @@ export default class Codeblock {
     }
 
     importCode(url: string) {
-        this.content = fetch(url).text()
+        this.content = syncFetch(url).text()
         return this
     }
 
     applyTheme(name: string) {
-        this.css = fetch(`https://raw.githubusercontent.com/PrismJS/prism/master/themes/prism-${name}.css`)
+        this.css = syncFetch(`https://raw.githubusercontent.com/PrismJS/prism/master/themes/prism-${name}.css`)
         return this
     }
 
     applyOriginalTheme(url: string) {
-        this.css = fetch(url)
+        this.css = syncFetch(url)
         return this
+    }
+
+    save(writeStream: fs.WriteStream) {
+        return new Promise<void>((resolve, reject) => {
+            writeStream.write(SvgGenerator(), () => {
+                resolve()
+            })
+        })
     }
 
 }
