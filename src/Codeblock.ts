@@ -4,20 +4,20 @@ import fetch from 'sync-fetch'
 export default class Codeblock {
 
     language: string
-    code: string | undefined
+    content: string | undefined
     css: string | undefined
 
     constructor(language: string) {
         this.language = language
     }
 
-    write(code: string) {
-        this.code = code
+    code(code: string) {
+        this.content = code
         return this
     }
 
-    import(url: string) {
-        this.code = fetch(url).text()
+    importCode(url: string) {
+        this.content = fetch(url).text()
         return this
     }
 
