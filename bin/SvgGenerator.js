@@ -1,11 +1,10 @@
-import Prism from 'prismjs'
-import { Codeblock } from "./Codeblock.js";
-
-export default function SvgGenerator(codeblock: Codeblock) {
-    const split = codeblock.content?.split('\n')!!
-    const maxLength = split.sort((a, b) => b.length - a.length)[0].length
-    const height = 24 + 15.02 * (split.length + 2.5)
-    const width = 50 + 7.4 * maxLength
+import Prism from 'prismjs';
+export default function SvgGenerator(codeblock) {
+    var _a;
+    const split = (_a = codeblock.content) === null || _a === void 0 ? void 0 : _a.split('\n');
+    const maxLength = split.sort((a, b) => b.length - a.length)[0].length;
+    const height = 24 + 15.02 * (split.length + 2.5);
+    const width = 50 + 7.4 * maxLength;
     return `
 <svg width="${width}px" height="${height}px" xmlns="http://www.w3.org/2000/svg">
     <rect width="${width}px" height="${height}px" rx="5" ry="5" fill="#282d35" />
@@ -25,11 +24,11 @@ export default function SvgGenerator(codeblock: Codeblock) {
              </style>
                 <pre class="pre">    
                           
-<code class="code">${Prism.highlight(codeblock.content!!, Prism.languages[codeblock.language], codeblock.language)}</code>
+<code class="code">${Prism.highlight(codeblock.content, Prism.languages[codeblock.language], codeblock.language)}</code>
 
                 </pre>
             </body>
         </foreignObject>
     </switch>
-</svg>`
+</svg>`;
 }

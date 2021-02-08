@@ -5,6 +5,10 @@
   "repository": "https://github.com/Kotlia/better-codeblock.git",
   "author": "Shun Ueda <62182668+Kotlia@users.noreply.github.com>",
   "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "example": "tsc && node script/generateExamples.js"
+  },
   "dependencies": {
     "@types/node": "^14.14.25",
     "@types/node-fetch": "^2.5.8",

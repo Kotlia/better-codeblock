@@ -1,4 +1,6 @@
 bin
+example
+script
 node_modules
 test
 web

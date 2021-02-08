@@ -1,11 +1,13 @@
 // @ts-ignore
 import syncFetch from 'sync-fetch'
-import fetch from 'node-fetch'
 import fs from "fs";
-import SvgGenerator from "./SvgGenerator";
-import { defaultCSS } from "./DefaultCSS";
+import SvgGenerator from "./SvgGenerator.js";
+import { defaultCSS } from "./DefaultCSS.js";
+// @ts-ignore
+import load from 'prismjs/components/index.js'
+import Language from "./Language.js";
 
-export default class Codeblock {
+export class Codeblock {
 
     language: string
     content: string | undefined
@@ -14,6 +16,7 @@ export default class Codeblock {
     constructor(language: string) {
         this.language = language
         this.css = defaultCSS
+        load(language)
     }
 
     code(content: string) {
@@ -32,7 +35,6 @@ export default class Codeblock {
                 .split("\n").filter((it: string) => {
                 return !it.includes("background")
         }).join('\n')
-        console.log(this.css)
         return this
     }
 

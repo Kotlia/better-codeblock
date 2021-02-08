@@ -1,0 +1,155 @@
+
+<svg width="434.8px" height="166.69px" xmlns="http://www.w3.org/2000/svg">
+    <rect width="434.8px" height="166.69px" rx="5" ry="5" fill="#282d35" />
+    <circle cx="20" cy="18" r="4.3" fill="#ff5f58" />
+    <circle cx="35" cy="18" r="4.3" fill="#ffbd2e" />
+    <circle cx="50" cy="18" r="4.3" fill="#18c132" />
+    <switch>
+        <foreignObject x="30px" y="0px" width="434.8px" height="166.69px" requiredExtensions="http://www.w3.org/1999/xhtml">
+            <body xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+                .code {
+                    font-size: 13px;
+                    color: #658999;
+                    font-family: Monaco, Consolas, Menlo, 'Bitstream Vera Sans Mono', 'Powerline Symbols', monospace;
+                }
+                
+        /**
+         * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+         * Based on https://github.com/chriskempson/tomorrow-theme
+         * @author Rose Pritchard
+         */
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            color: #ccc;
+            background: none;
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 1em;
+            text-align: left;
+            white-space: pre;
+            word-spacing: normal;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 1.5;
+        
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+        
+            -webkit-hyphens: none;
+            -moz-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+        
+        }
+        
+        /* Code blocks */
+        pre[class*="language-"] {
+            padding: 1em;
+            margin: .5em 0;
+            overflow: auto;
+        }
+        
+        :not(pre) > code[class*="language-"],
+        pre[class*="language-"] {
+            background: #2d2d2d;
+        }
+        
+        /* Inline code */
+        :not(pre) > code[class*="language-"] {
+            padding: .1em;
+            border-radius: .3em;
+            white-space: normal;
+        }
+        
+        .token.comment,
+        .token.block-comment,
+        .token.prolog,
+        .token.doctype,
+        .token.cdata {
+            color: #999;
+        }
+        
+        .token.punctuation {
+            color: #ccc;
+        }
+        
+        .token.tag,
+        .token.attr-name,
+        .token.namespace,
+        .token.deleted {
+            color: #e2777a;
+        }
+        
+        .token.function-name {
+            color: #6196cc;
+        }
+        
+        .token.boolean,
+        .token.number,
+        .token.function {
+            color: #f08d49;
+        }
+        
+        .token.property,
+        .token.class-name,
+        .token.constant,
+        .token.symbol {
+            color: #f8c555;
+        }
+        
+        .token.selector,
+        .token.important,
+        .token.atrule,
+        .token.keyword,
+        .token.builtin {
+            color: #cc99cd;
+        }
+        
+        .token.string,
+        .token.char,
+        .token.attr-value,
+        .token.regex,
+        .token.variable {
+            color: #7ec699;
+        }
+        
+        .token.operator,
+        .token.entity,
+        .token.url {
+            color: #67cdcc;
+        }
+        
+        .token.important,
+        .token.bold {
+            font-weight: bold;
+        }
+        .token.italic {
+            font-style: italic;
+        }
+        
+        .token.entity {
+            cursor: help;
+        }
+        
+        .token.inserted {
+            color: green;
+        }
+    
+             </style>
+                <pre class="pre">    
+                          
+<code class="code"><span class="token keyword">import</span> <span class="token class-name">React</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token class-name">Component</span> <span class="token punctuation">}</span> from <span class="token string">'react'</span>
+
+export <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">HelloWorld</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+    <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token generics"><span class="token punctuation">&lt;</span>p<span class="token punctuation">></span></span><span class="token class-name">Hello</span><span class="token punctuation">,</span> world<span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code>
+
+                </pre>
+            </body>
+        </foreignObject>
+    </switch>
+</svg>
