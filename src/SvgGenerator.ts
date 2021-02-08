@@ -1,5 +1,5 @@
 import Prism from 'prismjs'
-import { Codeblock } from "./Codeblock.js";
+import Codeblock from "./Codeblock.js";
 
 export default function SvgGenerator(codeblock: Codeblock) {
     const split = codeblock.content?.split('\n')!!

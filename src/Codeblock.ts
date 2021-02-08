@@ -7,7 +7,7 @@ import { defaultCSS } from "./DefaultCSS.js";
 import load from 'prismjs/components/index.js'
 import Language from "./Language.js";
 
-export class Codeblock {
+export default class Codeblock {
 
     language: string
     content: string | undefined
