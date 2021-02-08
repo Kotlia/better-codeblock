@@ -6,3 +6,13 @@
 <p align="center">
   <i>Just a slightly better code block.</i>
 </p>
+
+### Web
+
+Easiest way to use better-codeblock. Access by clicking [here]().
+
+### NPM
+
+If you can write JavaScript or want to integrate it into your application, using NPM repo is probably the easiest way to do so.
+
+### Web-API
