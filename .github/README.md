@@ -1,7 +1,7 @@
 <h1 align="center">better-codeblock</h1>
 
 <p align="center">
-  <img align="center" src="../example/thumbnail.png">
+  <img align="center" src="https://cdn.discordapp.com/attachments/718050872663212086/808483432531099658/161281824025953748.png">
 </p>
 <p align="center">
   <i>▲ Created using better-codeblock.</i>
