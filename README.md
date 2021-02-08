@@ -4,7 +4,7 @@
   <img align="center" src="example/thumbnail.png">
 </p>
 <p align="center">
-  <i>Just a slightly better code block.</i>
+  <i>Created using better-codeblock.</i>
 </p>
 
 ### Web
