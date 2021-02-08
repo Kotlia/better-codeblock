@@ -1,11 +1,11 @@
 
-<svg width="434.8px" height="166.69px" xmlns="http://www.w3.org/2000/svg">
-    <rect width="434.8px" height="166.69px" rx="5" ry="5" fill="#282d35" />
+<svg width="434.8px" height="196.73px" xmlns="http://www.w3.org/2000/svg">
+    <rect width="434.8px" height="196.73px" rx="5" ry="5" fill="#282d35" />
     <circle cx="20" cy="18" r="4.3" fill="#ff5f58" />
     <circle cx="35" cy="18" r="4.3" fill="#ffbd2e" />
     <circle cx="50" cy="18" r="4.3" fill="#18c132" />
     <switch>
-        <foreignObject x="30px" y="0px" width="434.8px" height="166.69px" requiredExtensions="http://www.w3.org/1999/xhtml">
+        <foreignObject x="30px" y="0px" width="434.8px" height="196.73px" requiredExtensions="http://www.w3.org/1999/xhtml">
             <body xmlns="http://www.w3.org/1999/xhtml">
             <style>
                 .code {
@@ -140,11 +140,13 @@
              </style>
                 <pre class="pre">    
                           
-<code class="code"><span class="token keyword">import</span> <span class="token class-name">React</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token class-name">Component</span> <span class="token punctuation">}</span> from <span class="token string">'react'</span>
+<code class="code"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
 
-export <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">HelloWorld</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">HelloWorld</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
     <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token generics"><span class="token punctuation">&lt;</span>p<span class="token punctuation">></span></span><span class="token class-name">Hello</span><span class="token punctuation">,</span> world<span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>
+            <span class="token operator">&lt;</span>p<span class="token operator">></span>Hello<span class="token punctuation">,</span> world<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+        <span class="token punctuation">)</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code>
 

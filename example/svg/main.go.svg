@@ -140,11 +140,11 @@
              </style>
                 <pre class="pre">    
                           
-<code class="code"><span class="token keyword">package</span> <span class="token namespace">main</span>
+<code class="code"><span class="token keyword">package</span> main
 <span class="token keyword">import</span> <span class="token string">"fmt"</span>
 
 func <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token class-name"><span class="token namespace">fmt<span class="token punctuation">.</span></span>Println</span><span class="token punctuation">(</span><span class="token string">"hello world"</span><span class="token punctuation">)</span>
+    fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"hello world"</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span></code>
 
                 </pre>

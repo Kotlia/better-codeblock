@@ -7,7 +7,7 @@ fs.readdir("example", (err, files) => {
     files.forEach(file => {
         if (file !== "svg") {
             fs.readFile(`example/${file}`, (err, data) => {
-                new Codeblock(Language.JAVA)
+                new Codeblock(Language.JAVASCRIPT)
                     .code(data.toString())
                     .save(fs.createWriteStream(`./example/svg/${file}.svg`))
                     .then(() => {
