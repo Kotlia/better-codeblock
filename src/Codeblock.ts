@@ -28,6 +28,11 @@ export default class Codeblock {
 
     applyTheme(name: string) {
         this.css = syncFetch(`https://raw.githubusercontent.com/PrismJS/prism/master/themes/prism-${name}.css`)
+            .text()
+                .split("\n").filter((it: string) => {
+                return !it.includes("background")
+        }).join('\n')
+        console.log(this.css)
         return this
     }
 
