@@ -2,7 +2,7 @@
 
 - label: "Welcome"
   link: "/"
-- label: "Create"
+- label: "Online tool"
   link: "/create"
 - label: "As a dependency"
   items:
