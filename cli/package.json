@@ -1,6 +1,6 @@
 {
   "name": "better-codeblock-cli",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "CLI for better-codeblock",
   "main": "src/index.js",
   "type": "module",
