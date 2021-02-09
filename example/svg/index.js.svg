@@ -1,11 +1,11 @@
 
-<svg width="508.8px" height="211.75px" xmlns="http://www.w3.org/2000/svg">
-    <rect width="508.8px" height="211.75px" rx="5" ry="5" fill="#282d35" />
+<svg width="508.8px" height="226.76999999999998px" xmlns="http://www.w3.org/2000/svg">
+    <rect width="508.8px" height="226.76999999999998px" rx="5" ry="5" fill="#282d35" />
     <circle cx="20" cy="18" r="4.3" fill="#ff5f58" />
     <circle cx="35" cy="18" r="4.3" fill="#ffbd2e" />
     <circle cx="50" cy="18" r="4.3" fill="#18c132" />
     <switch>
-        <foreignObject x="30px" y="0px" width="508.8px" height="211.75px" requiredExtensions="http://www.w3.org/1999/xhtml">
+        <foreignObject x="30px" y="0px" width="508.8px" height="226.76999999999998px" requiredExtensions="http://www.w3.org/1999/xhtml">
             <body xmlns="http://www.w3.org/1999/xhtml">
             <style>
                 .code {
@@ -142,9 +142,10 @@
                           
 <code class="code"><span class="token keyword">import</span> Codeblock<span class="token punctuation">,</span> <span class="token punctuation">{</span> Theme<span class="token punctuation">,</span> Language <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'better-codeblock'</span>
 <span class="token keyword">import</span> fs <span class="token keyword">from</span> <span class="token string">'fs'</span>
+<span class="token keyword">import</span> path <span class="token keyword">from</span> <span class="token string">'path'</span>
 
 <span class="token keyword">new</span> <span class="token class-name">Codeblock</span><span class="token punctuation">(</span>Language<span class="token punctuation">.</span><span class="token constant">JAVASCRIPT</span><span class="token punctuation">)</span>
-    <span class="token punctuation">.</span><span class="token function">importCode</span><span class="token punctuation">(</span><span class="token string">'./src/hello.js'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">importCode</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'./src/hello.js'</span><span class="token punctuation">)</span>
     <span class="token punctuation">.</span><span class="token function">applyTheme</span><span class="token punctuation">(</span>Theme<span class="token punctuation">.</span><span class="token constant">DARK</span><span class="token punctuation">)</span>
     <span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span>fs<span class="token punctuation">.</span><span class="token function">createWriteStream</span><span class="token punctuation">(</span><span class="token string">"./assets/icon.svg"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
     <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>

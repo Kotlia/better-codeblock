@@ -11,6 +11,6 @@
   "author": "Shun Ueda <62182668+Kotlia@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "better-codeblock": "^1.0.3"
+    "better-codeblock": "^1.0.4"
   }
 }

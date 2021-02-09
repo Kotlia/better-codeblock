@@ -11,7 +11,7 @@
 </p>
 
 ## Example
-![](https://svgur.com/i/TsH.svg)
+![](https://svgshare.com/i/TsJ.svg)
 
 ## Docs
 
