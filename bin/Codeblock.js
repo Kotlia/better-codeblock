@@ -1,9 +1,11 @@
 // @ts-ignore
 import syncFetch from 'sync-fetch';
+import fs from "fs";
 import SvgGenerator from "./SvgGenerator.js";
 import { defaultCSS } from "./DefaultCSS.js";
 // @ts-ignore
 import load from 'prismjs/components/index.js';
+import path from "path";
 export default class Codeblock {
     constructor(language) {
         this.language = language;
@@ -15,7 +17,12 @@ export default class Codeblock {
         return this;
     }
     importCode(url) {
-        this.content = syncFetch(url).text();
+        if (url.startsWith("http")) {
+            this.content = syncFetch(url).text();
+        }
+        else {
+            this.content = fs.readFileSync(path.resolve(url)).toString();
+        }
         return this;
     }
     applyTheme(name) {

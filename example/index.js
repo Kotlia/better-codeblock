@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import Codeblock, { Theme, Language } from 'better-codeblock'
 
-export default class HelloWorld extends Component {
-    render() {
-        return (
-            <p>Hello, world</p>
-        )
-    }
-}
+new Codeblock(Language.JAVASCRIPT)
+    .importCode('https://url/to/code')
+    .applyTheme(Theme.OKAIDIA)
+    .save(fs.createWriteStream("./test/test.svg"))
+    .then(() => {
+        console.log("done")
+    })

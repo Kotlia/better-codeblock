@@ -6,6 +6,7 @@ import { defaultCSS } from "./DefaultCSS.js";
 // @ts-ignore
 import load from 'prismjs/components/index.js'
 import Language from "./Language.js";
+import path from "path";
 
 export default class Codeblock {
 
@@ -25,7 +26,11 @@ export default class Codeblock {
     }
 
     importCode(url: string) {
-        this.content = syncFetch(url).text()
+        if (url.startsWith("http")) {
+            this.content = syncFetch(url).text()
+        } else {
+            this.content = fs.readFileSync(path.resolve(url)).toString()
+        }
         return this
     }
 
