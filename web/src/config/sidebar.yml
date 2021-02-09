@@ -1,24 +1,22 @@
 # Sidebar navigation
 
-- label: 'Introduction'
-  link: '/'
-- label: 'Getting started'
-  link: '/getting-started'
-- label: Usage
+- label: "Welcome"
+  link: "/"
+- label: "Create"
+  link: "/create"
+- label: "As a dependency"
   items:
-    - label: 'Creating docs'
-      link: '/usage/creating-docs'
-    - label: 'Navigation'
-      link: '/usage/navigation'
-    - label: 'Shadowing'
-      link: '/usage/shadowing'
-- label: More
+    - label: "Install"
+      link: "/package/install"
+    - label: "Docs"
+      link: "/usage/docs"
+- label: "Web API"
   items:
-    - label: FAQ
-      link: /faq
-    - label: Changelog
-      link: /changelog
-- label: Community
+    - label: "Example"
+      link: "/webapi"
+    - label: "Docs"
+      link: "/webapi/docs"
+- label: "External"
   items:
-    - label: 'Github'
-      link: https://github.com/rocketseat/gatsby-themes
+    - label: "Github"
+      link: "https://github.com/rocketseat/gatsby-themes"
