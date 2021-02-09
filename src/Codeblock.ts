@@ -6,7 +6,6 @@ import SvgGenerator from "./SvgGenerator.js";
 import { defaultCSS } from "./DefaultCSS.js";
 // @ts-ignore
 import load from 'prismjs/components/index.js'
-import path from "path";
 
 export default class Codeblock {
 

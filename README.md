@@ -22,7 +22,7 @@
 <dd><p>Set the content of the code block</p>
 </dd>
 <dt><a href="#importCode">importCode(url)</a></dt>
-<dd><p>Import the content of the code block</p>
+<dd><p>Import the content of the code block.  If using path, must use absolute path.</p>
 </dd>
 <dt><a href="#applyTheme">applyTheme(name)</a></dt>
 <dd><p>Apply the theme from default prism themes.</p>
@@ -58,7 +58,7 @@ Import the content of the code block
 
 | Param | Type | Description |
 | --- | --- | --- |
-| url | <code>string</code> | URL or path to the file. |
+| url | <code>string</code> | URL or path to the file.  If using path, must use absolute path. |
 
 <a name="applyTheme"></a>
 
