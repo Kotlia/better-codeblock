@@ -1,11 +1,11 @@
 // @ts-ignore
 import syncFetch from 'sync-fetch';
+// @ts-ignore
 import fs from "fs";
 import SvgGenerator from "./SvgGenerator.js";
 import { defaultCSS } from "./DefaultCSS.js";
 // @ts-ignore
 import load from 'prismjs/components/index.js';
-import path from "path";
 export default class Codeblock {
     /**
      * Language to be used in the codeblock.
@@ -32,15 +32,14 @@ export default class Codeblock {
     }
     /**
      * Import the content of the code block
-     * @param   {string }   url     URL or path to the file.
+     * @param   {string }   url     URL or path to the file. If using path, must use absolute path.
      */
     importCode(url) {
         if (url.startsWith("http")) {
             this.content = syncFetch(url).text();
         }
         else {
-            this.location = path.resolve(url);
-            this.content = fs.readFileSync(this.location).toString();
+            this.content = fs.readFileSync(url).toString();
         }
         return this;
     }
