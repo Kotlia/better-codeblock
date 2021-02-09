@@ -1,6 +1,6 @@
 {
   "name": "better-codeblock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.ts",
   "repository": "https://github.com/Kotlia/better-codeblock.git",
   "author": "Shun Ueda <62182668+Kotlia@users.noreply.github.com>",
