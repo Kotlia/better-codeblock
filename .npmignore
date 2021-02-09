@@ -1,11 +1,13 @@
+.github
+.idea
 bin
+cli
 example
-script
 node_modules
+script
 test
 web
 .gitignore
-.npmignore
 tsconfig.json
 yarn.lock
 yarn-error.log
