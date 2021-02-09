@@ -11,12 +11,14 @@ import path from "path";
 export default class Codeblock {
 
     language: string
-    content: string | undefined
     css: string
+    content: string
+    location: string | undefined
 
     constructor(language: string) {
         this.language = language
         this.css = defaultCSS
+        this.content = ""
         load(language)
     }
 
@@ -29,7 +31,8 @@ export default class Codeblock {
         if (url.startsWith("http")) {
             this.content = syncFetch(url).text()
         } else {
-            this.content = fs.readFileSync(path.resolve(url)).toString()
+            this.location = path.resolve(url)
+            this.content = fs.readFileSync(this.location).toString()
         }
         return this
     }

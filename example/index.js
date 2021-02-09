@@ -1,9 +1,10 @@
 import Codeblock, { Theme, Language } from 'better-codeblock'
+import fs from 'fs'
 
 new Codeblock(Language.JAVASCRIPT)
-    .importCode('https://url/to/code')
-    .applyTheme(Theme.OKAIDIA)
-    .save(fs.createWriteStream("./test/test.svg"))
+    .importCode('./src/hello.js')
+    .applyTheme(Theme.DARK)
+    .save(fs.createWriteStream("./assets/icon.svg"))
     .then(() => {
         console.log("done")
     })
