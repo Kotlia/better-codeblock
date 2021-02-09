@@ -5,9 +5,12 @@
   "main": "src/index.js",
   "type": "module",
   "bin": {
-    "codeblock": ""
+    "codeblock": "src/index.js"
   },
   "repository": "https://github.com/Kotlia/better-codeblock.git",
   "author": "Shun Ueda <62182668+Kotlia@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "better-codeblock": "^1.0.1"
+  }
 }
