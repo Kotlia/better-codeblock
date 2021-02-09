@@ -24,5 +24,7 @@ const cb = new Codeblock(args.lang || Language.JAVASCRIPT)
 
 if (args.theme_url) { cb.applyOriginalTheme(args.theme_url) }
 
+console.log(cb)
+
 cb.save(fs.createWriteStream(args.out))
     .then(process.exit(0))

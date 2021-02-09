@@ -30,19 +30,17 @@ base64-js@^1.3.1:
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
   integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
 
-better-codeblock@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/better-codeblock/-/better-codeblock-1.0.1.tgz#4ae009e6c4286ffdcea816499af44d6451c9b68a"
-  integrity sha512-pqajfttZTRuX8WSGZdbK/hvVIVXyKM4TJXY/amu3RpQyiiz2pLwW3b0G9xfOSPvplbIdX0d7IGnLfpjtanq4qg==
+better-codeblock@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/better-codeblock/-/better-codeblock-1.0.3.tgz#1d006d2847a586df6f93aba3e59ba7a93fb624a7"
+  integrity sha512-edavBtbn8VTfqYT9oe6mpSJlrcoLuL0qvpcHC1UiSDXUwTdg5CLyOY6EYpPhcVqUb6mtsqt920NK3iT0MU/mVw==
   dependencies:
     "@types/node" "^14.14.25"
     "@types/node-fetch" "^2.5.8"
     "@types/prismjs" "^1.16.2"
     fs "^0.0.1-security"
-    node-fetch "^2.6.1"
     prismjs "^1.23.0"
     sync-fetch "^0.3.0"
-    typescript "^4.1.3"
 
 buffer@^5.7.0:
   version "5.7.1"
@@ -145,8 +143,3 @@ tiny-emitter@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
   integrity sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
-
-typescript@^4.1.3:
-  version "4.1.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.4.tgz#f058636e2f4f83f94ddaae07b20fd5e14598432f"
-  integrity sha512-+Uru0t8qIRgjuCpiSPpfGuhHecMllk5Zsazj5LZvVsEStEjmIRRBZe+jHjGQvsgS7M1wONy2PQXd67EMyV6acg==
